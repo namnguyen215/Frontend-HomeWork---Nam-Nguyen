@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau dieu kien</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .pc {
+            width: clamp(1024px, 100%, 3000px);
+        }
+        
+        .tablet {
+            width: clamp(740px, 70%, 1023px);
+        }
+        
+        .mobile {
+            width: clamp(0px, 30%, 740px);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="pc">PC</p>
+    <p class="tablet">Tablet</p>
+    <p class="mobile">Mobile</p>
+    <script src='app.js'></script>
+</body>
+
+</html>
