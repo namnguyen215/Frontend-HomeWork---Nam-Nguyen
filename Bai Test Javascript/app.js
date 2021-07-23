@@ -90,47 +90,32 @@
 //     }
 // }
 
-// // //Bai 5
-// let input5 = prompt(`Nhap vao ngay thang nam`);
-// let a5 = input5.split('/');
-// if (a5[1] == 2 && a5[2] % 4 == 0 && (a5[0] >= 1 && a5[0] <= 29)) {
-//     console.log(nextDay(a5, 29));
-// } else if (a5[1] == 2 && a5[2] % 4 != 0 && (a5[0] >= 1 && a5[0] <= 28)) {
-//     console.log(nextDay(a5, 28));
-// } else if ((a5[0] >= 1 && a5[0] <= 31) && (a5[1] == 1 || a5[1] == 3 || a5[1] == 5 || a5[1] == 8 || a5[1] == 10 || a5[1] == 12)) {
-//     console.log(nextDay(a5, 31));
-// } else if ((a5[0] >= 1 && a5[0] <= 30) && (a5[1] == 4 || a5[1] == 6 || a5[1] == 9 || a5[1] == 11)) {
-//     console.log(nextDay(a5, 30));
-// } else {
-//     console.log('Khong hop le');
-// }
-
-// function nextDay(a5, lastDay) {
-//     if (a5[1] == 12 && a5[0] == 31) {
-//         a5[0] = 1;
-//         a5[1] = 1;
-//         a5[2] = Number(a5[2]) + 1;
-//     } else if (a5[0] == lastDay) {
-//         a5[0] = 1;
-//         a5[1] = Number(a5[1]) + 1;
-//     } else {
-//         a5[0] = Number(a5[0]) + 1;
-//     }
-//     let res = a5.join('/');
-//     return (res);
-// }
-
-
-let day = prompt("Ngày:");
-let month = prompt("Tháng:");
-let year = prompt("Năm:");
-
-function ktNgayThangNam(ngay, thang, nam) {
-    let date = new Date(nam, thang - 1, ngay);
-    if (date.getFullYear() == nam && date.getMonth() + 1 == thang && date.getDate() == ngay) {
-        alert(`Ngày ${day}/${month}/${year} là ngày hợp lệ`);
-    } else {
-        alert(`Ngày ${day}/${month}/${year} là ngày không hợp lệ`);
-    }
+// //Bai 5
+let input5 = prompt(`Nhap vao ngay thang nam`);
+let a5 = input5.split('/');
+if (a5[1] == 2 && a5[2] % 4 == 0 && (a5[0] >= 1 && a5[0] <= 29)) {
+    console.log(nextDay(a5, 29));
+} else if (a5[1] == 2 && a5[2] % 4 != 0 && (a5[0] >= 1 && a5[0] <= 28)) {
+    console.log(nextDay(a5, 28));
+} else if ((a5[0] >= 1 && a5[0] <= 31) && (a5[1] == 1 || a5[1] == 3 || a5[1] == 5 || a5[1] == 7 || a5[1] == 8 || a5[1] == 10 || a5[1] == 12)) {
+    console.log(nextDay(a5, 31));
+} else if ((a5[0] >= 1 && a5[0] <= 30) && (a5[1] == 4 || a5[1] == 6 || a5[1] == 9 || a5[1] == 11)) {
+    console.log(nextDay(a5, 30));
+} else {
+    console.log('Khong hop le');
 }
-console.log(ktNgayThangNam(day, month, year))
+
+function nextDay(a5, lastDay) {
+    if (a5[1] == 12 && a5[0] == 31) {
+        a5[0] = 1;
+        a5[1] = 1;
+        a5[2] = Number(a5[2]) + 1;
+    } else if (a5[0] == lastDay) {
+        a5[0] = 1;
+        a5[1] = Number(a5[1]) + 1;
+    } else {
+        a5[0] = Number(a5[0]) + 1;
+    }
+    let res = a5.join('/');
+    return (res);
+}

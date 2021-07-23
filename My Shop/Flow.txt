@@ -1,0 +1,27 @@
+1.Phân tích
+	1.header
+	2.slider
+	3.content
+		1.About
+		2.tour date
+		3.contact
+		4.image
+	4.footer
+2.Dựng base
+	1.Dựng base source
+	2.Reset CSS
+	3.Dựng base CSS
+	4.Dựng khung web
+3.Làm từng thành phần phân tích
+4. Hoàn thiện
+
+Question
+	Vị trí
+	Kích thước
+	Màu sắc
+	Kiểu dáng
+Thứ tự làm
+	1.Từ ngoài vào trong
+	2.Từ trên xuống dưới
+	3.Tổng quan đến chi tiết
+
