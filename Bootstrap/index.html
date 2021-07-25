@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">STORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">COMMUNITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">SUPPORT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-lg-2 ">
+                <div class="flex-shrink-0 p-3" style="width: 280px;">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none">
+                        <span class="fs-5 fw-semibold">
+                            <img class="sidebar-image home_page_gutter_giftcard" src="https://store.cloudflare.steamstatic.com/public/images//gift/steamcards_promo_02.png">
+                        </span>
+                    </a>
+                    <ul class="list-unstyled ps-0 ">
+                        <li class="mb-1 ">
+                            <div class="title">GIFT CARDS</div>
+                            <div class="collapse show" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-light rounded">Now Available On Steam</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <div class="title">RECOMMEND</div>
+                            <div class="collapse show" id="dashboard-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-light rounded">By Friends</a></li>
+                                    <li><a href="#" class="link-light rounded">By Curators</a></li>
+                                    <li><a href="#" class="link-light rounded">Tags</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <div class="title">DISCOVERY QUEUES</div>
+                            <div class="collapse show" id="orders-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-light rounded">Recommendatios</a></li>
+                                    <li><a href="#" class="link-light rounded">New Releases</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <div class="title">BROWSE CATEGORIES</div>
+                            <div class="collapse show" id="account-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-light rounded">Top Sellers</a></li>
+                                    <li><a href="#" class="link-light rounded">New Releases</a></li>
+                                    <li><a href="#" class="link-light rounded">Upcoming</a></li>
+                                    <li><a href="#" class="link-light rounded">Specials</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content col-lg-8">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                     </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" data-bs-toggle="dropdown">  Your store  </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" data-bs-toggle="dropdown">  New & Noteworthy  </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" data-bs-toggle="dropdown">  Categories  </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item active"> <a class="nav-link" href="#">Points Shop </a> </li>
+                                <li class="nav-item"><a class="nav-link" href="#"> News </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> Labs </a></li>
+                            </ul>
+                        </div>
+                        <!-- navbar-collapse.// -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
+                        </form>
+                    </div>
+                    <!-- container-fluid.// -->
+                </nav>
+                <div class="slide-game">
+                    <h3 class="silde-title">FEATURED & RECOMMEND</h3>
+                </div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1399780/ss_5a54087d78f5a69cdcb466ddb62b1c01d4a508e7.600x338.jpg" class="d-block w-100" alt="Image1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1399780/ss_605133e6bd5c411aee500dd1508604edc7848394.600x338.jpg" class="d-block w-100" alt="Image2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/578650/ss_4fe162d9752bc89c2de14ba549ffb6a6260b09aa.600x338.jpg" class="d-block w-100" alt="Image3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+
+                <div class="special-offers container-fluid">
+                    <div class="row">
+                        <h3 class="special-offers-title">SPECIAL OFFERS</h3>
+                        <div class="col-lg-4 box-game">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/spotlights/e769e7cb921d61d2cfa65df3/spotlight_image_english.jpg?t=1626891595" alt="">
+                            <div class="text">
+                                <p class="title">FREE WEEKEND</p>
+                                <p class="time-offer">Play for free until 26 Jul @ 9:00pm.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 box-game">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/spotlights/da2341b3e71eef39215f997d/spotlight_image_english.jpg?t=1626888765" alt="">
+                            <div class="text">
+                                <p class="title">FREE WEEKEND</p>
+                                <p class="time-offer">Play for free until 26 Jul @ 9:00pm.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 box-game">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/spotlights/6dfa857e607f836b44bd9021/spotlight_image_english.jpg?t=1626973634" alt="">
+                            <div class="text">
+                                <p class="title">FREE WEEKEND</p>
+                                <p class="time-offer">Play for free until 26 Jul @ 9:00pm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script></script>
+</body>
+
+</html>

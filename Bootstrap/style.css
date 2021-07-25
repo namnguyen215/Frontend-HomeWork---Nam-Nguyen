@@ -1,0 +1,124 @@
+body {
+    background-color: #1b2838;
+    font-family: "Motiva Sans", Sans-serif;
+    color: white;
+    height: 300vh;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #171a21;
+}
+
+.navbar .container {
+    margin-left: 276px;
+    margin-right: 276px;
+    padding: 20px 0 20px;
+}
+
+.navbar-brand img {
+    width: 176px;
+    aspect-ratio: auto 176 / 44;
+    height: 44px;
+}
+
+.container .sidebar {
+    background-color: #1b2838;
+}
+
+.sidebar .title {
+    color: #fff;
+}
+
+.sidebar-image {
+    width: 210px;
+}
+
+.sidebar a {
+    color: #66c0f4;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {}
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.main-content .navbar {
+    background: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80') repeat-x;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
+}
+
+.main-content .navbar input {
+    background-color: #316282;
+    border: 1px solid black;
+}
+
+.main-content .navbar input:hover {
+    border: 1px solid #2d5e95;
+}
+
+.slide-game {
+    margin-top: 28px;
+}
+
+.slide-game .silde-title,
+.special-offers .special-offers-title {
+    color: white;
+    font-size: 14px;
+}
+
+.special-offers {
+    margin-top: 62px;
+    margin-left: 12px;
+    padding: 0;
+}
+
+.special-offers .special-offers-title {
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.special-offers .box-game {
+    box-shadow: 0 0 5px #000000;
+    height: 390px;
+    padding: 0 0 0 0;
+    position: relative;
+    width: 32%;
+}
+
+.box-game+.box-game {
+    margin-left: 10px;
+}
+
+.special-offers .box-game img {
+    width: 100%;
+}
+
+.special-offers .text {
+    position: absolute;
+    background-color: #1e6c92;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px 40px;
+}
+
+.special-offers .text .title {
+    font-size: 14px;
+}
+
+.special-offers .text .time-offer {
+    font-size: 12px;
+}

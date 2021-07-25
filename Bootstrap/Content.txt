@@ -1,0 +1,11 @@
+//Html selector:
+by ID
+by classname
+by tag name
+console dir
+test content
+app.innerHTML
+app.innerText
+style 
+.children .parentElement
+classlist 
