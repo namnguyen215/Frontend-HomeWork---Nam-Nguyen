@@ -2,7 +2,7 @@ body {
     background-color: #1b2838;
     font-family: "Motiva Sans", Sans-serif;
     color: white;
-    height: 300vh;
+    height: 500vh;
 }
 
 ul li a {
@@ -17,12 +17,27 @@ ul li a {
     margin-left: 276px;
     margin-right: 276px;
     padding: 20px 0 20px;
+    position: relative;
 }
 
 .navbar-brand img {
     width: 176px;
     aspect-ratio: auto 176 / 44;
     height: 44px;
+}
+
+.global_action {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.global_action .install {
+    color: white;
+    padding: 4px 8px;
+    background-color: #5c7e10;
 }
 
 .container .sidebar {
@@ -61,13 +76,28 @@ ul li a {
     margin-top: 20px;
 }
 
-.main-content .navbar input {
-    background-color: #316282;
-    border: 1px solid black;
+.search-box {
+    display: inline-block;
+    position: relative;
 }
 
-.main-content .navbar input:hover {
+.search-box input {
+    background-color: #316282;
+    border: 1px solid black;
+    font-style: italic;
+}
+
+.search-box input:hover {
     border: 1px solid #2d5e95;
+}
+
+.search-box i {
+    position: absolute;
+    background-color: #559fcc;
+    right: 1px;
+    top: 1px;
+    padding: 6px 10px;
+    border-radius: 3px;
 }
 
 .slide-game {
@@ -78,6 +108,14 @@ ul li a {
 .special-offers .special-offers-title {
     color: white;
     font-size: 14px;
+}
+
+#carouselExampleFade .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    text-shadow: 1px 1px black;
+    width: 100%;
 }
 
 .special-offers {
@@ -107,7 +145,7 @@ ul li a {
     width: 100%;
 }
 
-.special-offers .text {
+.special-offers .box-game .text {
     position: absolute;
     background-color: #1e6c92;
     bottom: 0;
@@ -115,10 +153,48 @@ ul li a {
     padding: 10px 20px 40px;
 }
 
-.special-offers .text .title {
+.box-game .text .title {
     font-size: 14px;
 }
 
-.special-offers .text .time-offer {
+.box-game .text .time-offer {
     font-size: 12px;
+}
+
+.special-offers .two-box-game {
+    height: 390px;
+}
+
+.two-box-game .row2 {
+    margin-top: 10px;
+}
+
+.small-box-game {
+    position: relative;
+    height: 190px;
+}
+
+.small-box-game img {
+    width: 100%;
+}
+
+.small-box-game .text {
+    background-color: #aedbf4;
+    padding: 4px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.small-box-game .text .title {
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+}
+
+.small-box-game .text .time-offer {
+    background-color: #4f95bd;
+    font-size: 10px;
+    margin: 0;
+    padding: 1px 10px 1px 5px;
 }
