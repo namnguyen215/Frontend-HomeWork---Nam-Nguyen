@@ -7,12 +7,8 @@
 body {
     font-family: Arial, Verdana, sans-serif;
     color: #000000;
-    background-color: rgb(32, 26, 26);
+    background-color: rgb(133, 133, 133);
     height: 200vh;
-}
-
-.legend-font {
-    font-family: 'le'
 }
 
 .container {}
@@ -22,6 +18,15 @@ body {
     color: #ddd;
     font-size: 11px;
     height: 80px;
+}
+
+.header .navbar {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header .navbar .main-logo {
+    position: relative;
 }
 
 .navbar-nav {
@@ -68,7 +73,6 @@ body {
     background-color: #000000;
     position: absolute;
     top: 0;
-    left: 540px;
 }
 
 .logo-box img {
@@ -79,6 +83,42 @@ body {
 
 .dropdown:hover>.dropdown-menu {
     display: block;
+}
+
+.header .nav-item {
+    position: relative;
+}
+
+.header .dropdown-menu {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    width: 240px;
+    left: -50%;
+    border-radius: 0;
+}
+
+.dropdown hr {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin: 0;
+}
+
+.header .dropdown-menu li {
+    margin: 0 20px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.header .dropdown-menu .dropdown-item {
+    padding: 10px 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    color: #fff;
+    font-style: italic;
+}
+
+.header .dropdown-menu .dropdown-item:hover {
+    color: #8d7535;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .offcanvas-body a {
