@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1b2838;
     font-family: "Motiva Sans", Sans-serif;
@@ -5,7 +11,7 @@ body {
     height: 500vh;
 }
 
-ul li a {
+a {
     text-decoration: none;
 }
 
@@ -32,12 +38,19 @@ ul li a {
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 12px;
 }
 
 .global_action .install {
     color: white;
     padding: 4px 8px;
     background-color: #5c7e10;
+    border: 0px solid;
+}
+
+.global_action .login a {
+    text-decoration: none;
+    color: white;
 }
 
 .container .sidebar {
@@ -197,4 +210,83 @@ ul li a {
     font-size: 10px;
     margin: 0;
     padding: 1px 10px 1px 5px;
+}
+
+.signinBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signinBox .text {
+    font-size: 34px;
+    margin: 24px 0 24px;
+    letter-spacing: 2px;
+}
+
+.signin-btn {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-btn input {
+    background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+    border-radius: 2px;
+    border: 0px solid;
+    background-position: 25%;
+    background-size: 330% 100%;
+    color: white;
+    padding: 5px 0;
+    width: 200px;
+}
+
+.signinBox .login-title {
+    font-size: 14px;
+    color: #b8b6b4;
+    margin-bottom: 5px;
+}
+
+.signinBox input {
+    width: 300px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 0px solid;
+    padding: 5px 6px;
+}
+
+.signin-btn .forgot {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.input-group .btn {
+    margin-left: 10px;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 0;
+}
+
+.todo-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d5e95;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.todo-list ul li p {
+    margin: 0;
+}
+
+.checked {
+    background-color: #47bfff;
 }

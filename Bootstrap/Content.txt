@@ -8,4 +8,11 @@ app.innerHTML
 app.innerText
 style 
 .children .parentElement
-classlist 
+classlist add();remove();contains()
+
+METHOD 
+	createElement;
+	appendChild();
+	setAttribute();
+EVENT:
+	onClick();

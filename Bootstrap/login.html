@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">STORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">COMMUNITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">SUPPORT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="global_action">
+                <button class="install"><i class="bi bi-download"></i> Install Steam</button>
+                <span class="login"><a href="login.html">login</a> | language <i class="bi bi-caret-down-fill"></i></span>
+            </div>
+        </div>
+    </nav>
+    <div class="signinBox">
+        <div class="text">SIGN IN</div>
+        <form action="https://www.google.com.vn/" method="post">
+            <div class="login-row">
+                <div class="login-title">Steam account name</div>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="login-row">
+                <div class="login-title">Password</div>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <div class="signin-btn">
+                <input type="submit" value="Sign In">
+                <p class="forgot">Forgot your password?</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
