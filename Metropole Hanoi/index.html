@@ -14,9 +14,11 @@
 
 <body>
     <div class="container-fluid p-0">
+        <!-- Header -->
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-dark pt-0 pb-0">
                 <div class="row">
+                    <!-- Left Item -->
                     <div class="col-5 navbar-left ">
                         <!-- Canvas -->
                         <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -158,6 +160,8 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Logo -->
                     <div class="main-logo col-2">
                         <a class="navbar-brand" id="logo" href="#">
                             <div class="logo-box">
@@ -165,6 +169,7 @@
                             </div>
                         </a>
                     </div>
+                    <!-- Right Item -->
                     <div class="col-5   navbar-right">
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
@@ -207,30 +212,44 @@
                 </div>
             </nav>
         </div>
+        <!-- End Header -->
     </div>
+
+    <!-- Slider Begin -->
     <div class="slider container-fluid">
+        <div class="slider-border">
+            <img src="https://www.sofitel-legend-metropole-hanoi.com/wp-content/themes/sofitel-legend-template/images/border.png" alt="border-slider" srcset="">
+        </div>
+        <div class="hotel-name">
+            <h2>SOFITEL LEGEND
+                <br> METROPOLE HANOI
+            </h2>
+
+        </div>
+        <div class="overlay"></div>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/95/2016/12/21145906/3546837_XL-3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/95/2016/12/21150315/3557991_XL-1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/95/2016/12/21145812/3546881_XL-3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
+    <!-- Slider End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>

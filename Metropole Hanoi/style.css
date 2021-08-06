@@ -23,6 +23,7 @@ body {
 .header .navbar {
     margin: 0 auto;
     width: 80%;
+    z-index: 9999;
 }
 
 .header .navbar .main-logo {
@@ -104,8 +105,6 @@ body {
 
 .header .dropdown-menu li {
     margin: 0 20px;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .header .dropdown-menu .dropdown-item {
@@ -114,6 +113,8 @@ body {
     font-size: 15px;
     color: #fff;
     font-style: italic;
+    white-space: normal;
+    transition: color .5s ease;
 }
 
 .header .dropdown-menu .dropdown-item:hover {
@@ -159,4 +160,70 @@ body {
     color: #8d7535;
     font-size: 14px;
     font-family: 'Times New Roman', serif;
+}
+
+.slider {
+    height: 731px;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(82, 54, 17);
+    padding: 0;
+}
+
+.slider button {
+    z-index: 999;
+}
+
+.slider .slider-border {
+    position: absolute;
+    z-index: 50;
+    left: 10%;
+    right: 10%;
+    top: 80px;
+}
+
+.slider .slider-border img {
+    width: 100%;
+}
+
+.slider .hotel-name {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    z-index: 100;
+    transform: translateY(-50%) translateX(-3%);
+    line-height: 60px;
+}
+
+.slider .hotel-name h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    text-shadow: 0px 0px 40px #000000;
+    font-weight: 300;
+    color: #fff;
+}
+
+.slider .carousel-item {
+    height: 731px;
+}
+
+.slider .carousel-control {
+    width: 10%;
+}
+
+.slider .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateY(-15%);
+}
+
+.slider .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 51;
 }
