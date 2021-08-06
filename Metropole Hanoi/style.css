@@ -47,7 +47,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 80px;
+    padding: 0;
 }
 
 .navbar-right .bookRoom {
@@ -88,6 +88,10 @@ body {
 
 .header .nav-item {
     position: relative;
+}
+
+.nav-link {
+    color: #ddd !important;
 }
 
 .header .dropdown-menu {
