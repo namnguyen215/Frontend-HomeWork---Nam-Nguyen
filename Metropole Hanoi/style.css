@@ -168,9 +168,8 @@ body {
 
 .slider {
     height: 731px;
-    position: absolute;
-    top: 0px;
-    background-color: rgb(82, 54, 17);
+    position: relative;
+    top: -80px;
     padding: 0;
 }
 
@@ -230,4 +229,17 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 51;
+}
+
+.review {
+    height: 410px;
+}
+
+.review .carousel-inner {
+    height: 300px;
+}
+
+.review .carousel-caption {
+    color: #000;
+    top: 50%;
 }
