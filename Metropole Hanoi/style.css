@@ -7,7 +7,7 @@
 body {
     font-family: Arial, Verdana, sans-serif;
     color: #000000;
-    background-color: rgb(133, 133, 133);
+    /* background-color: rgb(133, 133, 133); */
     height: 200vh;
 }
 
@@ -183,10 +183,12 @@ body {
     left: 10%;
     right: 10%;
     top: 80px;
+    bottom: 0;
 }
 
 .slider .slider-border img {
     width: 100%;
+    height: 80%;
 }
 
 .slider .hotel-name {
@@ -233,13 +235,143 @@ body {
 
 .review {
     height: 410px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.review .user-review {
+    border-right: 1px solid #cfcfcf;
+    overflow: hidden;
+    position: relative;
+    /* padding-right: 20px; */
+}
+
+.review .carousel {
+    max-width: 100%;
+}
+
+.review .text-content {
+    line-height: 32px;
+    font-size: 14px;
+    width: 100%;
 }
 
 .review .carousel-inner {
     height: 300px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
 }
 
-.review .carousel-caption {
+.review .carousel-item {
+    width: 100%;
+}
+
+.user-review .title {
+    font-family: 'Times New Roman', serif;
+    font-size: 26px;
+}
+
+.user-review .text-content {
+    text-align: center;
+}
+
+.user-review .reviewer-name,
+.user-review .address {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.review .base-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stay_in_touch {
+    margin-top: 50px;
+}
+
+.stay_in_touch .logo {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.stay_in_touch .social {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 16px;
+}
+
+.stay_in_touch hr {
+    width: 152px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Times New Roman', serif;
+    padding: 10px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+footer input {
+    height: 50px;
+}
+
+footer input[type=email] {
+    padding: 10px 40px 10px 10px;
+    font-size: 15px;
+}
+
+footer input[type=submit] {
+    color: #8d7535;
+    border: 1px solid #8d7535;
+    padding: 10px 28px;
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+
+footer input[type=submit]:hover {
+    background-color: #8d7535;
+    color: white;
+}
+
+footer .link {
+    width: 730px;
+}
+
+footer .link ul {
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+footer .link a {
+    text-decoration: none;
     color: #000;
-    top: 50%;
+}
+
+footer .seobar {
+    font-size: 9px;
+    font-family: 'Gotham', sans-serif;
 }

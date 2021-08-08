@@ -1,0 +1,12 @@
+.review {
+    height: 410px;
+}
+
+.review .carousel-inner {
+    height: 300px;
+}
+
+.review .carousel-caption {
+    color: #000;
+    top: 50%;
+}
