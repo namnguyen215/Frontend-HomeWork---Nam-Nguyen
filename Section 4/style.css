@@ -1,12 +1,21 @@
-.review {
-    height: 410px;
+.book-now {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgb(252, 196, 113);
 }
 
-.review .carousel-inner {
-    height: 300px;
+.modal-header {
+    flex-direction: column;
 }
 
-.review .carousel-caption {
-    color: #000;
-    top: 50%;
+.modal-header button {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+}
+
+.modal-footer .row {
+    width: 100%;
 }

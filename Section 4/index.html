@@ -9,71 +9,126 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calenderstyle.css">
 </head>
 
 <body>
-    <h1>Nguyễn Phương Nam</h1>
-    <h2>Section 4</h2>
-    <!-- <div class="review">
-        <div class="row">
-            <div class="col-8 user-review">
-                <div id="carouselExampleSlidesOnly" class="carousel fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
+    <a href="#" class="book-now" data-bs-toggle="modal" data-bs-target="#exampleModal"><i>Book room</i></a>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>SOFITEL LEGEND METROPOLE HANOI</div>
+                    <div>Book your stay</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="ftco-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="calendar-section">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+
+                                                <div class="calendar calendar-first" id="calendar_first">
+                                                    <div class="calendar_header">
+                                                        <button class="switch-month switch-left">
+                                          <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                                        <h2></h2>
+                                                        <button class="switch-month switch-right">
+                                          <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                                    </div>
+                                                    <div class="calendar_weekdays"></div>
+                                                    <div class="calendar_content"></div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+
+                                                <div class="calendar calendar-second" id="calendar_second">
+                                                    <div class="calendar_header">
+                                                        <button class="switch-month switch-left">
+                                          <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                                        <h2></h2>
+                                                        <button class="switch-month switch-right">
+                                          <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                                    </div>
+                                                    <div class="calendar_weekdays"></div>
+                                                    <div class="calendar_content"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Row -->
+
+                                    </div>
+                                    <!-- End Calendar -->
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
-                            </div>
-                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <div class="row room-select">
+                        <form action="" method="post">
+                            <label for="rooms">Rooms</label>
+                            <select name="rooms" id="rooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label for="adults">Adults</label>
+                            <select name="adults" id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <label for="children">Children</label>
+                            <select name="children" id="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
                     </div>
+                    <div class="row">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="loyalty">Loyalty program</label>
+                                    <input type="text" name="loyalty">
+                                </div>
+                                <div class="col-6">
+                                    <label for="code">Preferential code</label>
+                                    <input type="text" name="code">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#" class="book-now" data-bs-toggle="modal" data-bs-target="#exampleModal"><i>BookNow</i></a>
                 </div>
             </div>
-            <div class="col-4 base-review"></div>
-        </div>
-    </div> -->
-    <div class="review">
-        <div class="row">
-            <div class="col-8 user-review">
-                <div id="carouselExampleSlidesOnly" class="carousel fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption">
-                                <h3>John D.</h3>
-                                <p>TEXT</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 base-review"></div>
         </div>
     </div>
     <!-- <script src="app.js"></script> -->
-    <script src="homework.js"></script>
+
+    <!-- <script src="homework.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 

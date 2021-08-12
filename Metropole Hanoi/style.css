@@ -233,6 +233,88 @@ body {
     z-index: 51;
 }
 
+.offers {
+    margin-bottom: 52px;
+}
+
+.offers .subtitle {
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 32px;
+}
+
+.offers .box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+}
+
+.offers .box {
+    width: 360px;
+}
+
+.offers .box-text {
+    padding: 16px 0;
+}
+
+.offers .box-text h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.offers .box-text p {
+    text-align: right;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: 'Gotham', sans-serif;
+    text-align: justify;
+    padding-left: 45px;
+}
+
+.offers .box-text span a {
+    text-decoration: none;
+    font-style: italic;
+    float: right;
+    color: #8d7535;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.offers .slow-button {
+    width: 150px;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+}
+
+.row-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 36px;
+}
+
+.location .address {
+    padding-left: 16px;
+}
+
+.location .address .title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.location .address .content {
+    font-family: 'Gotham', sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8d7535;
+}
+
 .review {
     height: 410px;
     text-align: center;
@@ -257,6 +339,15 @@ body {
     width: 100%;
 }
 
+.review .carousel-item {
+    transition: transform 1.5s ease-in-out;
+}
+
+.review .carousel-fade .active.carousel-item-start,
+.review .carousel-fade .active.carousel-item-end {
+    transition: opacity .3s;
+}
+
 .review .carousel-inner {
     height: 300px;
     display: flex;
@@ -275,6 +366,7 @@ body {
 
 .user-review .text-content {
     text-align: center;
+    font-family: 'Gotham', sans-serif;
 }
 
 .user-review .reviewer-name,
@@ -289,6 +381,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    line-height: 31px;
+}
+
+.review .base-review p {
+    color: #8d7535;
+    font-family: 'Gotham', sans-serif;
 }
 
 .stay_in_touch {
@@ -339,7 +437,7 @@ footer input[type=email] {
     font-size: 15px;
 }
 
-footer input[type=submit] {
+.slow-button {
     color: #8d7535;
     border: 1px solid #8d7535;
     padding: 10px 28px;
@@ -347,7 +445,7 @@ footer input[type=submit] {
     transition: 0.5s ease-in-out;
 }
 
-footer input[type=submit]:hover {
+.slow-button:hover {
     background-color: #8d7535;
     color: white;
 }
