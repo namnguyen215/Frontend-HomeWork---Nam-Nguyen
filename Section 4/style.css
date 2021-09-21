@@ -7,15 +7,57 @@
 
 .modal-header {
     flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-header .hotel-name {
+    color: #000;
+    font-size: 24px;
+}
+
+.modal-header .subtitle {
+    color: #8d7535;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .modal-header button {
     position: absolute;
     margin: 0;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 8px;
 }
 
 .modal-footer .row {
     width: 100%;
+}
+
+.modal-footer .selection {
+    width: 80px;
+    float: left;
+    margin-right: 3%;
+}
+
+.modal-footer select {
+    width: 100%;
+}
+
+.modal-footer label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: #000;
+}
+
+.modal-footer input {
+    width: 100%;
+}
+
+.modal-footer .book-now {
+    background-color: #8d7535;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal-footer .book-now:hover {
+    color: #fff;
 }

@@ -1,0 +1,802 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: #000000;
+    /* background-color: rgb(133, 133, 133); */
+    height: 200vh;
+}
+
+.container {}
+
+.header .row {
+    width: 100%;
+    color: #ddd;
+    font-size: 11px;
+    height: 80px;
+}
+
+.header .navbar {
+    margin: 0 auto;
+    width: 80%;
+    z-index: 9999;
+}
+
+.header .navbar .main-logo {
+    position: relative;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-right .bookRoom {
+    background-color: #8d7535;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 30px;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.navbar-right .bookRoom:hover {
+    cursor: pointer;
+    background-color: #796329
+}
+
+.navbar-left .btn {
+    font-size: 20px;
+    color: #fff;
+}
+
+.logo-box {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+}
+
+.logo-box img {
+    width: 176px;
+    height: 150px;
+    padding: 20px 28px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.header .nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #ddd !important;
+}
+
+.header .dropdown-menu {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    width: 240px;
+    left: -50%;
+    border-radius: 0;
+}
+
+.dropdown hr {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin: 0;
+}
+
+.header .dropdown-menu li {
+    margin: 0 20px;
+}
+
+.header .dropdown-menu .dropdown-item {
+    padding: 10px 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    color: #fff;
+    font-style: italic;
+    white-space: normal;
+    transition: color .5s ease;
+}
+
+.header .dropdown-menu .dropdown-item:hover {
+    color: #8d7535;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.book-now {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 11px 20px;
+    font-size: 14px;
+    background-color: #8d7535;
+}
+
+.book-now:hover {
+    color: #fff;
+}
+
+.modal .row {
+    height: auto;
+    color: #000;
+}
+
+.modal-header {
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-header .hotel-name {
+    color: #000;
+    font-size: 24px;
+}
+
+.modal-header .subtitle {
+    color: #8d7535;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.modal-header button {
+    position: absolute;
+    margin: 0;
+    top: 8px;
+    right: 8px;
+}
+
+.modal-footer .row {
+    width: 100%;
+}
+
+.modal-footer .selection {
+    width: 80px;
+    float: left;
+    margin-right: 3%;
+}
+
+.modal-footer select {
+    width: 100%;
+    height: 28px;
+}
+
+.modal-footer label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px !important;
+    color: #000;
+}
+
+.modal-footer input {
+    width: 100%;
+    height: 28px;
+}
+
+
+/* .modal-footer .book-now {
+    background-color: #8d7535;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal-footer .book-now:hover {
+    color: #fff;
+} */
+
+.offcanvas-body a {
+    text-decoration: none;
+}
+
+.offcanvas-body .side-logo {
+    text-align: center;
+}
+
+.offcanvas-body ul {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.offcanvas-body .title {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    color: #000;
+}
+
+.offcanvas-body .subMenu li {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    line-height: 160%;
+    color: #333;
+}
+
+.offcanvas-footer {
+    margin-top: 84px;
+}
+
+.offcanvas-body .offcanvas-footer p {
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 10px;
+    color: #8d7535;
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+.slider {
+    height: 731px;
+    position: relative;
+    top: -80px;
+    padding: 0;
+}
+
+.slider button {
+    z-index: 999;
+}
+
+.slider .slider-border {
+    position: absolute;
+    z-index: 50;
+    left: 10%;
+    right: 10%;
+    top: 80px;
+    bottom: 0;
+}
+
+.slider .slider-border img {
+    width: 100%;
+    height: 80%;
+}
+
+.slider .hotel-name {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    z-index: 100;
+    transform: translateY(-50%) translateX(-3%);
+    line-height: 60px;
+}
+
+.slider .hotel-name h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    text-shadow: 0px 0px 40px #000000;
+    font-weight: 300;
+    color: #fff;
+}
+
+.slider .carousel-item {
+    height: 731px;
+}
+
+.slider .carousel-control {
+    width: 10%;
+}
+
+.slider .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateY(-15%);
+}
+
+.slider .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 51;
+}
+
+.offers {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.offers .subtitle {
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 32px;
+}
+
+.offers .box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+}
+
+.offers .box {
+    width: 360px;
+}
+
+.offers .box-text {
+    padding: 16px 0;
+}
+
+.offers .box-text h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.offers .box-text p {
+    text-align: right;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: 'Gotham', sans-serif;
+    text-align: justify;
+    padding-left: 45px;
+}
+
+.offers .box-text span a {
+    text-decoration: none;
+    font-style: italic;
+    float: right;
+    color: #8d7535;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.offers .slow-button {
+    width: 150px;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+}
+
+.row-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 36px;
+}
+
+.location .address {
+    padding-left: 16px;
+}
+
+.location .address .title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.location .address .content {
+    font-family: 'Gotham', sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8d7535;
+}
+
+.review {
+    height: 410px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.review .user-review {
+    border-right: 1px solid #cfcfcf;
+    overflow: hidden;
+    position: relative;
+    /* padding-right: 20px; */
+}
+
+.review .carousel {
+    max-width: 100%;
+}
+
+.review .text-content {
+    line-height: 32px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.review .carousel-item {
+    transition: transform 1.5s ease-in-out;
+}
+
+.review .carousel-fade .active.carousel-item-start,
+.review .carousel-fade .active.carousel-item-end {
+    transition: opacity .3s;
+}
+
+.review .carousel-inner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.review .carousel-item {
+    width: 100%;
+}
+
+.user-review .title {
+    font-family: 'Times New Roman', serif;
+    font-size: 26px;
+}
+
+.user-review .text-content {
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+}
+
+.user-review .reviewer-name,
+.user-review .address {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.review .base-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 31px;
+}
+
+.review .base-review p {
+    color: #8d7535;
+    font-family: 'Gotham', sans-serif;
+}
+
+.stay_in_touch {
+    margin-top: 50px;
+}
+
+.stay_in_touch .logo {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.stay_in_touch .social {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 16px;
+}
+
+.stay_in_touch hr {
+    width: 152px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Times New Roman', serif;
+    padding: 10px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+footer input {
+    height: 50px;
+}
+
+footer input[type=email] {
+    padding: 10px 40px 10px 10px;
+    font-size: 15px;
+}
+
+.slow-button {
+    color: #8d7535;
+    border: 1px solid #8d7535;
+    padding: 10px 28px;
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+
+.slow-button:hover {
+    background-color: #8d7535;
+    color: white;
+}
+
+footer .link {
+    width: 730px;
+}
+
+footer .link ul {
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+footer .link a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer .seobar {
+    font-size: 9px;
+    font-family: 'Gotham', sans-serif;
+}
+
+
+/*Small map + img*/
+
+.smallmap h1 h2 h3 h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.smallmap h3 {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.smallmap {
+    display: flex;
+    justify-content: center;
+    padding: 10px 12%;
+}
+
+.smallmap .quote {
+    margin-top: 36px;
+}
+
+.column-left {
+    float: left;
+    width: 70%;
+    padding-right: 80px;
+}
+
+.column-right {
+    float: right;
+    width: 30%;
+}
+
+.quote {
+    float: left;
+    position: relative;
+}
+
+.quote p {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+}
+
+.column-left .signature {
+    font-family: 'Times New Roman', serif;
+    color: #444444;
+    line-height: 44px;
+    font-size: 14px;
+}
+
+#intro a {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #8d7535;
+    float: right;
+    right: 25px;
+    position: sticky;
+    text-decoration: none;
+}
+
+.column-right .location_map {
+    border: 1px solid #8d7535;
+    padding: 4px;
+}
+
+.column-right .location_link {
+    padding-top: 12px;
+}
+
+
+/* Singular and inspiring*/
+
+#highlighted {
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    float: inherit;
+}
+
+#highlighted ul {
+    list-style-type: none;
+    display: flex;
+    padding-top: 40px;
+}
+
+.highlighted-list ul {
+    margin: 0 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#highlighted ul li:first-child {
+    overflow: visible;
+}
+
+#highlighted ul li {
+    height: 500px;
+    float: inherit;
+    position: relative;
+    margin-bottom: 30px;
+    float: left;
+    margin-right: 50px;
+}
+
+.highlighted-list li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.highlighted-list h3 {
+    font-family: 'legendtext', serif;
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#highlighted h3 {
+    margin-top: 30px;
+}
+
+#highlighted .image-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.highlighted-list a {
+    text-decoration: none;
+    color: #8d7535;
+    transition: color .4s ease-in-out;
+    outline: 0;
+}
+
+#highlighted li div {
+    position: relative;
+    left: 0;
+}
+
+.highlighted-list div.w-resp {
+    overflow: hidden;
+}
+
+.highlighted-list ul li>a>div>strong {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: normal;
+    clear: both;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-bottom: 0;
+}
+
+#highlighted li div>p {
+    margin: 10px 0 0 0;
+    text-align: left;
+    line-height: 20px;
+}
+
+#highlighted div>p {
+    font-family: 'Gotham';
+    font-size: 16px;
+}
+
+.highlighted-list p {
+    color: black;
+    float: none;
+}
+
+
+/*Imange and quote*/
+
+#image-quote {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#image-quote .image-fullwidth {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#image-quote .image-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+#image-quote .text-section {
+    position: absolute;
+}
+
+#image-quote .text-section {
+    top: 30%;
+    left: 10%;
+    width: 80%;
+}
+
+#image-quote .text-section p {
+    color: white;
+    text-align: center;
+    float: none;
+    font-family: 'Gotham';
+    border-radius: initial;
+    padding-top: 35px;
+}
+
+#image-quote .text-section p {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#image-quote .text-section span {
+    float: right;
+    font-family: 'Gotham';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+}
